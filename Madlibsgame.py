@@ -1,0 +1,10 @@
+adjective1 = input("Enter an adjective(Description): ")
+adjective2 = input("Enter an adjective(Description): ")
+adjective3 = input("Enter an adjective(Description): ")
+noun = input("Enter a noun: ")
+verb = input("Enter a verb: ")
+
+print(f"Once upon a time there was a {adjective1} {noun}")
+print(f"Who {verb} a {adjective2} {noun}")
+print(f"And they {verb} a {adjective1} {noun}")
+print(f"I was {verb} a {adjective3} {noun}")
