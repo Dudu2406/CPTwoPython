@@ -110,11 +110,120 @@ else:
 #char = text[::2]
 #print(char)
 
-ccnum = "1267-2546-7674-9672"
+'''ccnum = "1267-2546-7674-9672"
 
 ccnum1 = ccnum[15:]
 print(f"Credit card number: xxxx-xxxx-xxxx-{ccnum1}")
 
 rchar = ccnum[18::-1]
-print(f"Credit card number in reverse: {rchar}")
+print(f"Credit card number in reverse: {rchar}")'''
 
+
+#03/09/26
+
+#Example 1
+
+'''username = input("Enter a username: ")
+
+while username == "":
+    print("you didn't put your username")
+    username = input("Enter a username: ")
+    
+print(f"Welcome {username}!!")''' 
+
+'''number = int(input("Enter a number: "))
+
+while number < 1 or number >20:
+    if number < 1:
+        print("Number should not be lower than 1")
+        number = int(input("Enter a number: "))
+    elif number > 20:
+        print("Number should not be higher than 20")
+        number = int(input("Enter a number: "))
+        
+print(f"Number is {number}")'''
+
+'''favfood = input("Enter your favourite food(enter q to quit): ")
+
+while not favfood =="q":
+    print(f"your favourite food is {favfood}")
+    favfood = input("Enter your favourite food(enter q to quit): ")
+
+print("thank you for giving your favourite food")'''
+
+
+'''for x in range (1,10):
+    if x == 5:
+        continue
+    else:
+        print(x, end="")'''
+        
+'''Fruits = ["Apple","Orange","Banana","Coconut"]
+Fruits.append("pineapple")'''
+
+#list on a loop
+'''index = 0
+while index <len(Fruits):
+    print(Fruits[index])
+    index += 1'''
+    
+'''for x in Fruits:
+    print(f"Fruits: {Fruits}")'''
+    
+#Functions example:
+
+'''def addition(num1, num2):
+    sum = num1 + num2
+    print (sum)
+    
+addition(50, 50)'''
+
+'''def info(Name, Age, Country):
+    print(Name)
+    print(Age)
+    print(Country)
+
+info("Bogart", 15, "America")'''
+
+class Student:
+    
+    student_count = 0
+    total_GPA = 0
+    
+    def __init__(self, name, course, GPA):
+        self.name = name
+        self.course = course
+        self.GPA = GPA
+        Student.student_count += 1
+        Student.total_GPA += GPA
+        
+        
+    def get_data(self):
+        print(f"My name is {self.name}")
+        print(f"My Course is {self.course}")
+    
+    @staticmethod
+    def is_valid_course(course):
+        valid_course = ["BSIS","BSCS","BSEMC"]
+        for x in valid_course:
+            if x == course:
+                print("Course is valid")
+                
+                
+    @classmethod
+    def get_average_GPA(cls):
+        ave = cls.total_GPA/ cls.student_count
+        print(f"Average GPA of all students is {ave}")
+        
+
+        
+student1 = Student("John", "BSIS", 3.8)
+student2 = Student("Bogart", "BSCS", 5.5)
+student3 = Student("Carl", "BSEMC", 2.8)
+
+print(f"Student's name is {student1.name}, his course is {student1.course}, and his GPA is: {student1.GPA}")
+
+Student.is_valid_course(student1.course)
+Student.get_average_GPA()
+
+#student1.get_data()
