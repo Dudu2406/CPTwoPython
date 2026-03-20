@@ -201,14 +201,14 @@ class Student:
     def get_data(self):
         print(f"My name is {self.name}")
         print(f"My Course is {self.course}")
-    
-    @staticmethod
+        print(f"My GPA is {self.GPA}")
+        
+    '''@staticmethod
     def is_valid_course(course):
         valid_course = ["BSIS","BSCS","BSEMC"]
         for x in valid_course:
             if x == course:
-                print("Course is valid")
-                
+                print("Course is valid")'''
                 
     @classmethod
     def get_average_GPA(cls):
@@ -221,9 +221,13 @@ student1 = Student("John", "BSIS", 3.8)
 student2 = Student("Bogart", "BSCS", 5.5)
 student3 = Student("Carl", "BSEMC", 2.8)
 
-print(f"Student's name is {student1.name}, his course is {student1.course}, and his GPA is: {student1.GPA}")
+#\print(f"Student's name is {student1.name}, his course is {student1.course}, and his GPA is: {student1.GPA}")
 
-Student.is_valid_course(student1.course)
-Student.get_average_GPA()
+#Student.is_valid_course(student1.course)
 
-#student1.get_data()
+
+
+'''Student1 = Student("Bogart", "BSCS", 2.8)
+Student1.get_data()
+Student2= Student("Burat", "BSIT", 4.0)
+Student2.get_data()'''
